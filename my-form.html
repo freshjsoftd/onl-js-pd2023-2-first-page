@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<style>
+			datalist {
+				display: flex;
+				justify-content: space-between;
+				width: 160px;
+			}
+			option {
+				/* margin-left: 30px; */
+				font-size: 10px;
+				padding: 0;
+			}
+			input[type='range'] {
+				width: 160px;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="./index.html">Home</a>
+		<form>
+			<fieldset>
+				<legend>Text</legend>
+				<div class="form-elem">
+					<label for="text">Text</label>
+					<input id="text" placeholder="Text" />
+				</div>
+				<div class="form-elem">
+					<label for="password">password</label>
+					<input
+						type="password"
+						id="password"
+						placeholder="password"
+					/>
+				</div>
+				<div class="form-elem">
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="Email" />
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Button</legend>
+				<div class="form-elem">
+					<label for="btn">Button</label>
+					<input type="button" id="btn" value="Cancel" />
+				</div>
+				<div class="form-elem">
+					<label for="chb">Checkbox</label>
+					<input type="checkbox" id="chb" checked />
+				</div>
+				<div class="form-elem">
+					<label for="radio">Red</label>
+					<input type="radio" id="radio" name="color" />
+				</div>
+				<div class="form-elem">
+					<label for="radio">Green</label>
+					<input type="radio" id="radio" name="color" />
+				</div>
+				<div class="form-elem">
+					<label for="color">color</label>
+					<input type="color" id="color" checked />
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Date</legend>
+				<div class="form-elem">
+					<label for="date">date</label>
+					<input type="date" id="date" checked />
+				</div>
+				<div class="form-elem">
+					<label for="dtl">Date-Time</label>
+					<input type="datetime-local" id="dtl" checked />
+				</div>
+				<div class="form-elem">
+					<label for="file">file</label>
+					<input type="file" id="file" />
+				</div>
+			</fieldset>
+
+			<!-- <div class="form-elem">
+				<label for="image">image</label>
+				<input type="image" id="image" src="./assets/icons/icons8-athlete-male-16.ico">
+			</div> -->
+			<div class="form-elem">
+				<label for="number">number</label>
+				<input type="number" id="number" />
+			</div>
+			<div class="form-elem">
+				<label for="submit">submit</label>
+				<input type="submit" id="submit" value="Save" />
+			</div>
+			<div class="form-elem">
+				<label for="range">Price</label>
+				<input
+					type="range"
+					id="range"
+					name="price"
+					min="10"
+					max="100"
+					step="10"
+					list="money"
+				/>
+				<datalist id="money">
+					<option value="10" label="10"></option>
+					<option value="20" label="20"></option>
+					<option value="30" label="30"></option>
+					<option value="40" label="40"></option>
+					<option value="50" label="50"></option>
+					<option value="60" label="60"></option>
+					<option value="70" label="70"></option>
+					<option value="80" label="80"></option>
+				</datalist>
+			</div>
+			<div class="form-elem">
+				<label for="aria">Aria</label>
+				<textarea id="aria" rows="6" cols="40"></textarea>
+			</div>
+			<div class="form-elem">
+				<label for="sel">Select</label>
+				<select id="sel" name="model" multiple>
+					<option value="---" selected>---</option>
+					<option value="Ford">Ford</option>
+					<option value="BMW">BMW</option>
+					<option value="Audi">Audi</option>
+					<option value="Toyota">Toyota</option>
+				</select>
+			</div>
+
+			<!-- <button type="submit">Ok</button> -->
+		</form>
+	</body>
+</html>
