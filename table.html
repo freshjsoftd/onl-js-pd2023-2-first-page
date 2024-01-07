@@ -16,14 +16,23 @@
         th,
         tr,
         td{
-            border: 2px solid teal
+            border: 2px solid teal;
+        }
+        #tab2 tr:nth-child(odd){
+            background-color: aqua;
+        }
+        caption::before{
+            content: '#';
+        }
+        caption::first-letter{
+            color: red
         }
 
     </style>
 </head>
 <body>
     <table>
-        <caption>Table#1 Capitals info</caption>
+        <caption>Table Capitals info</caption>
         <thead>
             <tr>
                 <th rowspan="2">Country</th>
@@ -74,7 +83,7 @@
             
         </tbody>
     </table>
-    <!--  <table>
+     <table id="tab2">
         <caption>Schedule</caption>
         <thead>
             <tr>
@@ -110,6 +119,6 @@
                 <td></td>
             </tr>
         </tbody>
-    </table> -->
+    </table>
 </body>
 </html>

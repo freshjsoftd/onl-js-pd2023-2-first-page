@@ -1,0 +1,75 @@
+body{
+    font-size: 30px;
+}
+div{
+    border: 3px solid rgb(0,0,0);
+    /* background-color: teal; */
+}
+[name]{
+    border: 5px solid magenta
+}
+[name~=wi4]{
+    border: 5px solid grey
+}
+
+[name=wi2], [name=wi3]{
+    border: 5px solid brown
+}
+
+[name$='1']{
+    background-color: coral;
+}
+/* #rgb{
+    background-color: red;
+} */
+.color{
+    width: 300px;
+    height: 150px;
+    /* background-color: rgb(255, 90, 70, 0.5); */
+}
+.l1, .l2, .l3{
+    font-size: 2rem;
+}
+.width1{
+    width: 300px;
+    background-color: rgb(255, 90, 70, 0.5);
+}
+.width2{
+    width: 40vw;
+}
+.width3{
+    width: 40%;
+}
+
+.width4{
+    width: 300px;
+    background-color: magenta;
+}
+
+.l1 p{
+    color:brown;
+}
+.width2+div{
+    background-color: aquamarine;
+}
+.width2:hover{
+    background-color: aquamarine;
+}
+
+a:visited{
+    color:brown;
+    /* display: ; */
+}
+
+h2:first-child{
+    color: blue;
+}
+p + p::first-line{
+    color:chocolate;
+    font-size: 40px;
+}
+p:first-child::selection{
+    /* color: red; */
+    background-color: rgb(255, 90, 70, 0.3);
+    /* font-size: 60px; */
+}
