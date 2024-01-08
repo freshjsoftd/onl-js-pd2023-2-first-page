@@ -1,0 +1,23 @@
+datalist {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+}
+label{
+    text-align: center;
+}
+option {
+	padding: 0;
+}
+input[type='range'] {
+	width: 200px;
+	margin: 0;
+}
+input[type='email']:focus {
+	background-color: blue;
+}
+.range{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}

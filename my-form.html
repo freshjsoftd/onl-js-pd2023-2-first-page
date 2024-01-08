@@ -3,26 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/my-form.css">
 		<title>Form</title>
-		<style>
-			datalist {
-				display: flex;
-				justify-content: space-between;
-				width: 160px;
-			}
-			option {
-				/* margin-left: 30px; */
-				font-size: 10px;
-				padding: 0;
-			}
-			input[type='range'] {
-				width: 160px;
-				margin: 0;
-			}
-			input[type=email]:focus{
-				background-color: blue;
-			}
-		</style>
 	</head>
 	<body>
 		<a href="./index.html">Home</a>
@@ -97,14 +79,15 @@
 				<label for="submit">submit</label>
 				<input type="submit" id="submit" value="Save" />
 			</div>
-			<div class="form-elem">
+			<div class="range">
 				<label for="range">Price</label>
+				<!-- <br /> -->
 				<input
 					type="range"
 					id="range"
 					name="price"
 					min="10"
-					max="100"
+					max="80"
 					step="10"
 					list="money"
 				/>
